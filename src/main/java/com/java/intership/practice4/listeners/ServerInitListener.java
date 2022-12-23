@@ -18,11 +18,11 @@ public class ServerInitListener implements ServletContextListener, HttpSessionLi
     public void contextInitialized(ServletContextEvent sce) {
         System.out.println("Done");
         userRepository.putUser(new User("admin", "admin", "Admin"));
-        userRepository.putUser(new User("user1", "1234", "Andrey"));
-        userRepository.putUser(new User("user2", "1234", "Misha"));
-        userRepository.putUser(new User("user3", "1234", "Dmytro"));
-        userRepository.putUser(new User("user4", "1234", "Katya"));
-        userRepository.putUser(new User("user5", "1234", "Mila"));
+        userRepository.putUser(new User("user1", "1234", "User1"));
+        userRepository.putUser(new User("user2", "1234", "User2"));
+        userRepository.putUser(new User("user3", "1234", "User3"));
+        userRepository.putUser(new User("user4", "1234", "User4"));
+        userRepository.putUser(new User("user5", "1234", "User5"));
     }
 
 }
